@@ -9,6 +9,5 @@ spec:
     app.kubernetes.io/name: MyApp
   ports:
      - protocol: TCP
-       port: 80
-       targetPort: 80
-       nodeport: 30009
+       port: 90
+       targetPort: 90
