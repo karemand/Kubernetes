@@ -4,10 +4,11 @@ metadata:
   name: svc
   namespace: move
 spec:
+  type: NodePort
   selector:
     app.kubernetes.io/name: MyApp
   ports:
      - protocol: TCP
        port: 9090
        targetPort: 90
-  type: NodePort
+       nodeport: 30009
